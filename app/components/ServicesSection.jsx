@@ -1,34 +1,34 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaShip, FaPlane, FaTruck, FaWarehouse, FaFileInvoiceDollar, FaGlobeAmericas } from 'react-icons/fa';
+import { FaShip, FaEmpire, FaTruck, FaWarehouse, FaFileInvoiceDollar, FaGlobeAmericas } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
 const services = [
   {
-    icon: FaShip,
-    title: 'Importación Marítima',
-    description: 'Gestionamos el despacho aduanal de mercancías que llegan por vía marítima con la máxima eficiencia y seguridad.'
+    icon: FaEmpire,
+    title: 'Despacho Aduanal',
+    description: 'Sabemos que cada importador y exportador requiere un despacho aduanal rápido, confiable y con respaldo jurídico. En IP Broker, nuestro equipo de expertos trabaja para que cada trámite sea ágil, seguro y sin contratiempos.'
   },
   {
-    icon: FaPlane,
-    title: 'Importación Aérea',
-    description: 'Servicio express para tus envíos urgentes. Despacho aduanal ágil para mercancía que llega por avión.'
+    icon: FaShip,
+    title: 'Fletes Marítimos',
+    description: 'En IP Broker, ponemos a tu disposición fletes marítimos competitivos, respaldados por alianzas comerciales con consolidadores y expedidores de carga internacionales que garantizan eficiencia, seguridad y puntualidad.' 
+  },
+   {
+    icon: FaWarehouse,
+    title: 'Comercializadora',
+    description: 'Pensando en las operaciones que requieren padrones sectoriales —como siderúrgico, calzado, textil y confección— ponemos a tu disposición nuestra comercializadora, brindando respaldo jurídico y fiscal con total confianza.'
   },
   {
     icon: FaTruck,
-    title: 'Transporte Terrestre',
-    description: 'Coordinamos el despacho y transporte de mercancías por carretera, facilitando el comercio fronterizo.'
-  },
-  {
-    icon: FaWarehouse,
-    title: 'Almacenamiento',
-    description: 'Bodegas fiscalizadas y servicios de almacenaje temporal mientras completamos los trámites aduanales.'
+    title: 'Fletes Nacionales',
+    description: 'Implementamos rigurosos programas de auditoría en nuestros servicios de transporte para asegurar que tu carga llegue puntual, segura y al mejor costo del mercado.'
   },
   {
     icon: FaFileInvoiceDollar,
-    title: 'Consultoría Aduanal',
-    description: 'Asesoría especializada en clasificación arancelaria, regulaciones y optimización de costos de importación.'
+    title: 'Previos en Origen',
+    description: 'Un servicio diseñado para minimizar costos, tiempos y riesgos, asegurando mayor eficiencia en tus operaciones de comercio exterior, garantizamos eficiencia y control desde el inicio de la operación.'
   },
   {
     icon: FaGlobeAmericas,
@@ -127,7 +127,7 @@ export default function ServicesSection() {
                 {/* WhatsApp Button */}
                 <button
                   onClick={() => handleWhatsAppClick(service.title)}
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-green-500/50"
+                  className="cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-green-500/50"
                 >
                   <IoLogoWhatsapp className="w-5 h-5 sm:w-6 sm:h-6" />
                   <span className="text-sm sm:text-base">Contactar por WhatsApp</span>
