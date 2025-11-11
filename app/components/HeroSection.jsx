@@ -35,7 +35,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="block"
+              className="block text-gray-400"
             >
               Simplificamos tus
             </motion.span>
@@ -54,7 +54,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto px-2 transition-colors duration-300"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-300 max-w-2xl mx-auto px-2 transition-colors duration-300"
           >
             IPBroker es tu socio estratégico para el despacho aduanal rápido y seguro. Conectando tu negocio con el mundo.
           </motion.p>
