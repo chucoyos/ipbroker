@@ -50,7 +50,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="text-indigo-600 dark:text-indigo-400 block"
+                className="text-indigo-600 block"
               >
                 Operaciones Aduanales
               </motion.span>
