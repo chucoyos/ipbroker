@@ -50,12 +50,12 @@ export default function NavbarSection() {
             className="flex items-center space-x-2 sm:space-x-3"
           >
             <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-colors duration-300 ${
-              scrolled ? 'bg-indigo-600 dark:bg-indigo-500' : 'bg-white/20 md:bg-indigo-600 dark:bg-indigo-500'
+              scrolled ? 'bg-indigo-600 dark:bg-indigo-500' : 'bg-indigo-600 md:bg-indigo-600 dark:bg-indigo-500'
             }`}>
               <span className="text-white font-bold text-lg sm:text-xl">IP</span>
             </div>
             <span className={`text-xl sm:text-2xl font-bold transition-colors duration-300 ${
-              scrolled ? 'text-gray-900 dark:text-white' : 'text-gray-900 md:text-white dark:text-white'
+              scrolled ? 'text-gray-900 dark:text-white' : 'text-white dark:text-white'
             }`}>
               Broker
             </span>
@@ -88,7 +88,7 @@ export default function NavbarSection() {
               className={`p-2 rounded-lg transition-all duration-300 ${
                 scrolled
                   ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-                  : 'text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                  : 'text-white dark:text-gray-300 hover:bg-white/10 dark:hover:bg-gray-800'
               }`}
               aria-label="Toggle menu"
             >
