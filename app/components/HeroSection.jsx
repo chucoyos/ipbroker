@@ -36,7 +36,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-900 dark:text-white leading-tight tracking-tight transition-colors duration-300"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight tracking-tight transition-colors duration-300"
             >
               <motion.span
                 initial={{ opacity: 0, x: -20 }}
@@ -44,7 +44,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="block text-gray-200"
               >
-                Simplificamos tus
+                Certeza Aduanal
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, x: 20 }}
@@ -52,7 +52,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-indigo-600 block"
               >
-                Operaciones Aduanales
+                confianza en cada embarque
               </motion.span>
             </motion.h1>
 
