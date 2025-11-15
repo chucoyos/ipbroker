@@ -59,11 +59,6 @@ const cardVariants = {
 };
 
 export default function ServicesSection() {
-  const handleWhatsAppClick = (serviceName) => {
-    const message = encodeURIComponent(`Hola, me interesa el servicio de ${serviceName}`);
-    const phoneNumber = '5215512345678'; // Replace with actual WhatsApp number
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-  };
 
   return (
     <section id="servicios" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
@@ -124,14 +119,7 @@ export default function ServicesSection() {
                   {service.description}
                 </p>
 
-                {/* WhatsApp Button */}
-                <button
-                  onClick={() => handleWhatsAppClick(service.title)}
-                  className="cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700 text-white font-medium rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-green-500/50"
-                >
-                  <IoLogoWhatsapp className="w-5 h-5 sm:w-6 sm:h-6" />
-                  <span className="text-sm sm:text-base">Contactar por WhatsApp</span>
-                </button>
+                
               </motion.div>
             );
           })}

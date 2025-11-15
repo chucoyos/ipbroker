@@ -12,7 +12,7 @@ export default function HeroSection() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-35 transition-opacity duration-300" 
         style={{ 
-          backgroundImage: "url('https://placehold.co/1920x1080/0F172A/ffffff?text=IPBroker+Logistica')"
+          backgroundImage: "url('/images/hero-image.png')"
         }}
         aria-hidden="true"
       ></motion.div>
@@ -24,40 +24,48 @@ export default function HeroSection() {
       <div className="relative z-10 flex items-center justify-center h-full px-4 py-12 sm:px-6 md:px-8 lg:px-12 text-center">
         <div className="max-w-4xl w-full space-y-4 sm:space-y-5 md:space-y-6">
           
-          {/* Título Principal */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-900 dark:text-white leading-tight tracking-tight transition-colors duration-300"
+          {/* Glassmorphism Card Container */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="backdrop-blur-md bg-white/10 dark:bg-gray-800/20 rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border border-white/20 dark:border-gray-700/30 shadow-2xl"
           >
-            <motion.span
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="block text-gray-400"
+            {/* Título Principal */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-900 dark:text-white leading-tight tracking-tight transition-colors duration-300"
             >
-              Simplificamos tus
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-indigo-600 dark:text-indigo-400 block"
-            >
-              Operaciones Aduanales
-            </motion.span>
-          </motion.h1>
+              <motion.span
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="block text-gray-200"
+              >
+                Simplificamos tus
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="text-indigo-600 dark:text-indigo-400 block"
+              >
+                Operaciones Aduanales
+              </motion.span>
+            </motion.h1>
 
-          {/* Subtítulo Descriptivo */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-indigo-300 max-w-2xl mx-auto px-2 transition-colors duration-300"
-          >
-            IPBroker es tu socio estratégico para el despacho aduanal rápido y seguro. Conectando tu negocio con el mundo.
-          </motion.p>
+            {/* Subtítulo Descriptivo */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto px-2 transition-colors duration-300 mt-4 sm:mt-5 md:mt-6"
+            >
+              IPBroker es tu socio estratégico para el despacho aduanal rápido y seguro. Conectando tu negocio con el mundo.
+            </motion.p>
+          </motion.div>
 
           {/* Botón de Llamada a la Acción (CTA) */}
           <motion.div
